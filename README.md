@@ -64,5 +64,15 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Welldoc is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://www.nasdaqprivatemarket.com/
+Welldoc is a Columbia, Maryland digital health company whose FDA-cleared, AI-driven cardiometabolic care
+platform — best known through its BlueStar digital therapeutic for type 1 and type 2 diabetes — delivers
+personalized coaching and clinical decision support across 30+ chronic conditions. It sells to health plans,
+health systems, employers, life science companies, DMEs and medtech partners rather than to developers.
+
+Welldoc markets SDK and API access as a partnering option but publishes no developer portal, API reference,
+or machine-readable contract. This profile therefore records what *is* public — a coordinated vulnerability
+disclosure program, a named certification posture, and a full record of the discovery probes that missed.
+
+- Website: https://www.welldoc.com/
+- Partnering (the SDK/API claim): https://www.welldoc.com/platform/partnering
+- Security and compliance: https://www.welldoc.com/platform/security

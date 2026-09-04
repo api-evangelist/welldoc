@@ -1,0 +1,29 @@
+generated: '2026-09-04'
+method: searched
+source: https://www.welldoc.com/get-a-demo
+plan_count: 0
+pricing_published: false
+model: enterprise-contract
+note: >-
+  Welldoc publishes no pricing of any kind. Its 367-URL sitemap contains no /pricing, /plans or
+  /packages page, and every solution page for every buyer segment (health plans, health systems,
+  employers, life science, DMEs, health tech) terminates in a "Get a Demo" or "Contact Sales"
+  form rather than a rate card. BlueStar reaches individuals by prescription or through an
+  employer/plan sponsor, so there is no consumer-facing self-serve price either. The SDK/API
+  access Welldoc advertises on /platform/partnering carries no published commercial terms.
+buyer_paths:
+- segment: enterprise (health plans, systems, employers, life science, DMEs, health tech)
+  path: https://www.welldoc.com/get-a-demo
+  http_status: 200
+  terms: unpublished — negotiated
+- segment: individuals
+  path: https://www.welldoc.com/individuals
+  http_status: 200
+  terms: unpublished — prescription or sponsor-provided
+evidence:
+- url: https://www.welldoc.com/sitemap.xml
+  http_status: 200
+  finding: 367 URLs, no pricing or plans page
+- url: https://www.welldoc.com/get-a-demo
+  http_status: 200
+  finding: demo request form stands in for pricing

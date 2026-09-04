@@ -1,17 +1,33 @@
 aid: welldoc
 name: Welldoc
-description: 'Welldoc is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: Welldoc is a Columbia, Maryland digital health company whose FDA-cleared, AI-driven cardiometabolic
+  care platform — best known through its BlueStar digital therapeutic for type 1 and type 2 diabetes — delivers
+  personalized, real-time coaching and clinical decision support across 30+ chronic conditions including diabetes,
+  hypertension, weight management and complex comorbid cardiometabolic disease. The platform ingests data from 400+
+  connected devices and data sources (blood glucose meters, CGMs, pharmacies, labs, activity trackers) and is sold
+  to health plans, health systems, employers, life science companies, DMEs and medtech partners rather than to developers.
+  Welldoc markets SDK and API access as a partnering option — "we offer our capabilities, AI models, and data integration
+  through your interface via SDK and API" — but publishes no developer portal, API reference, or machine-readable
+  contract; access is negotiated through a demo/partnering conversation.
+image: https://cdn.prod.website-files.com/68ff656dfd889fd60fdf65a2/69172c699c1caf9d490535f3_Opengraph%20(1).png
 url: https://raw.githubusercontent.com/api-evangelist/welldoc/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
 specificationVersion: '0.20'
 created: '2026-09-04'
 modified: '2026-09-04'
+position: Producing
 tags:
 - Company
+- Digital Health
+- Healthcare
+- Chronic Care Management
+- Diabetes
+- Digital Therapeutics
+- Cardiometabolic Health
+- Artificial Intelligence
+- Remote Patient Monitoring
+- Medical Device Software
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +35,80 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: TrustCenter
+  url: security/welldoc-trust-center.yml
+- type: VulnerabilityDisclosure
+  url: security/welldoc-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/welldoc-domain-security.yml
 - type: Website
-  url: https://www.nasdaqprivatemarket.com/
+  url: https://www.welldoc.com/
+- type: About
+  url: https://www.welldoc.com/welldoc-about-us
+- type: Features
+  url: https://www.welldoc.com/platform
+- type: Partners
+  url: https://www.welldoc.com/platform/partnering
+- type: Support
+  url: https://helpdesk.welldoc.com/support/home
+- type: Blog
+  url: https://www.welldoc.com/individuals/blog
+- type: Newsroom
+  url: https://www.welldoc.com/news-events
+- type: PrivacyPolicy
+  url: https://www.welldoc.com/privacy-policy
+- type: TermsOfService
+  url: https://www.welldoc.com/terms
+- type: ContactUs
+  url: https://www.welldoc.com/contact-us
+- type: SignUp
+  url: https://www.welldoc.com/get-a-demo
+- type: LinkedIn
+  url: https://www.linkedin.com/company/welldoc-inc
+- type: X
+  url: https://x.com/welldoc
+- type: Conformance
+  url: conformance/welldoc-conformance.yml
+- type: Compliance
+  url: https://www.welldoc.com/platform/security
+- type: Security
+  url: https://www.welldoc.com/platform/security
+- type: LLMsTxt
+  url: llms/welldoc-llms.txt
+- type: Plans
+  url: plans/welldoc-plans-pricing.yml
+- type: RateLimits
+  url: rate-limits/welldoc-rate-limits.yml
+- type: Solutions
+  url: https://www.welldoc.com/platform/solutions
+- type: Careers
+  url: https://www.welldoc.com/careers/united-states
+- type: CaseStudies
+  url: https://www.welldoc.com/resources
+- type: Instagram
+  url: https://www.instagram.com/welldocinc/
+x-enrichment:
+  date: '2026-09-04'
+  status: minimal
+  artifacts_added: 9
+  pass: local-v3
+x-coverage:
+  state: gated
+  reason: sales-gate
+  detail: Welldoc markets SDK and API access on /platform/partnering — "we offer our capabilities, AI models, and
+    data integration through your interface via SDK and API" — but its entire 367-URL sitemap contains no developer
+    portal, API reference or spec, and every technical page terminates in a Get-a-Demo form.
+  evidence:
+  - url: https://www.welldoc.com/platform/partnering
+    status: 200
+  - url: https://www.welldoc.com/platform/solutions
+    status: 200
+  - url: https://developer.welldoc.com/
+    status: 0
+  - url: https://api.welldoc.com/
+    status: 0
+  - url: https://www.welldoc.com/openapi.json
+    status: 404
+  - url: https://helpdesk.welldoc.com/support/solutions
+    status: 302
+  checked: '2026-09-04'

@@ -1,0 +1,21 @@
+generated: '2026-09-04'
+method: searched
+source: https://www.welldoc.com/platform/partnering
+limit_count: 0
+published: false
+note: >-
+  An honest zero, and it follows from a larger absence: Welldoc publishes no API reference at all,
+  so there are no documented quotas, windows, burst allowances, 429 semantics or rate-limit
+  response headers to record. No X-RateLimit-*, RateLimit-* or Retry-After behaviour could be
+  observed either, because no unauthenticated Welldoc API endpoint exists to call — api.welldoc.com,
+  apis.welldoc.com, gateway.welldoc.com and services.welldoc.com are all NXDOMAIN. Any limits that
+  apply to the SDK/API access Welldoc offers partners are established in the contract, not published.
+limits: []
+headers: []
+evidence:
+- url: https://www.welldoc.com/platform/partnering
+  http_status: 200
+  finding: SDK/API offered as a partnering capability with no reference documentation
+- url: https://api.welldoc.com/
+  http_status: 0
+  finding: NXDOMAIN — no API host resolves

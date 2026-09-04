@@ -1,0 +1,44 @@
+generated: '2026-09-04'
+method: searched
+source: registry searches + https://github.com/welldoc
+package_count: 0
+official_count: 0
+packages: []
+note: >-
+  No first-party Welldoc client library exists in any public registry. The github.com/welldoc
+  organization is real (created 2020-08-21) but carries zero public repositories, so there is no
+  source to distribute. Welldoc markets an SDK on /platform/partnering; it is delivered under
+  partnership agreement rather than published, which is why there is no version or release date to
+  record here. Fields are null-with-note rather than omitted: these registries were checked, and
+  the finding is genuine absence.
+registries_searched:
+- registry: npm
+  query: welldoc, bluestar welldoc
+  result: no first-party package (the `bluestar-*` npm packages belong to an unrelated Chinese
+    software vendor, 蓝星软件)
+  version: null
+- registry: pypi
+  query: welldoc
+  http_status: 404
+  result: absent
+  version: null
+- registry: github
+  query: https://api.github.com/orgs/welldoc
+  http_status: 200
+  result: org exists, public_repos = 0
+  version: null
+- registry: rubygems
+  query: https://rubygems.org/api/v1/gems/welldoc.json
+  http_status: 404
+  result: absent
+  version: null
+- registry: crates.io
+  query: https://crates.io/api/v1/crates?q=welldoc
+  http_status: 200
+  result: 'total: 0'
+  version: null
+- registry: maven-central
+  query: https://search.maven.org/solrsearch/select?q=welldoc
+  http_status: 200
+  result: no matching artifact
+  version: null

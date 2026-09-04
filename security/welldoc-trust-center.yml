@@ -1,0 +1,52 @@
+generated: '2026-09-04'
+method: searched
+probe: true
+source: https://www.welldoc.com/platform/security
+url: https://www.welldoc.com/platform/security
+trust_center:
+  dedicated_portal: false
+  note: >-
+    Welldoc publishes its compliance posture as a section of its own marketing site
+    (/platform/security) rather than through a hosted trust portal (Vanta/Drata/SafeBase).
+    There is no document request workflow, and no trust.welldoc.com or security.welldoc.com
+    host resolves.
+certifications:
+- name: HITRUST r2
+  kind: certification
+  detail: >-
+    "HITRUST r2 Certification requires a comprehensive, risk-based security and privacy
+    assessment across 19 control domains, ensuring harmonization with standards like HIPAA,
+    NIST, and ISO 27001."
+- name: SOC 2 Type 2
+  kind: attestation
+  detail: Annual SOC 2 Type 2 attestation of controls.
+- name: MDSAP / ISO 13485
+  kind: quality-management
+  detail: Quality management system aligned with MDSAP/ISO 13485 for medical device software.
+- name: HIPAA
+  kind: regulatory
+  detail: Stated full compliance with HIPAA.
+- name: GDPR
+  kind: regulatory
+  detail: Stated full compliance with GDPR.
+- name: FDA 510(k)
+  kind: regulatory-clearance
+  detail: FDA 510(k) clearances for the BlueStar digital therapeutic.
+- name: CE Mark
+  kind: regulatory-clearance
+  detail: CE Mark listed under clearances.
+- name: Health Canada
+  kind: regulatory-clearance
+  detail: Health Canada clearance listed.
+- name: DiMe Seal
+  kind: seal
+  detail: Digital Medicine Society (DiMe) Seal displayed as a certification badge.
+referenced_frameworks:
+- NIST
+- ISO 27001
+evidence:
+- source: https://www.welldoc.com/platform/security
+  http_status: 200
+  quote: >-
+    "Our clearances and certifications: HITRUST r2 · MDSAP/ISO13485 · SOC2, Type 2 · DiMe Seal ·
+    FDA 510(k) · CE Mark · Health Canada Clearances"

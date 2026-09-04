@@ -1,0 +1,95 @@
+generated: '2026-09-04'
+method: searched
+source: https://www.welldoc.com/platform/security
+note: >-
+  Welldoc publishes no OpenAPI, AsyncAPI, GraphQL SDL, WSDL or .proto contract on any host it
+  controls, so no standard here could be asserted from a machine-readable artifact. Every entry
+  below is either a compliance/regulatory claim Welldoc makes in its own words on
+  /platform/security, or an explicit negative recorded from a probe. Nothing is inferred from
+  the healthcare sector alone.
+regulatory_regime: health
+standards:
+- id: hipaa
+  conforms: true
+  evidence: >-
+    https://www.welldoc.com/platform/security — "Full compliance with global and national health
+    privacy mandates, including HIPAA and GDPR"
+- id: gdpr
+  conforms: true
+  evidence: >-
+    https://www.welldoc.com/platform/security — same statement as HIPAA above
+- id: hitrust-csf-r2
+  conforms: true
+  evidence: >-
+    https://www.welldoc.com/platform/security — "HITRUST r2 Certification requires a comprehensive,
+    risk-based security and privacy assessment across 19 control domains"
+- id: soc2-type2
+  conforms: true
+  evidence: >-
+    https://www.welldoc.com/platform/security — "We undergo an annual SOC 2 Type 2 attestation"
+- id: iso-13485
+  conforms: true
+  evidence: >-
+    https://www.welldoc.com/platform/security — "Quality management system is aligned with the
+    MDSAP/ISO 13485 standards for medical device software"
+- id: mdsap
+  conforms: true
+  evidence: https://www.welldoc.com/platform/security — listed under "Our clearances and certifications"
+- id: fda-510k
+  conforms: true
+  evidence: >-
+    https://www.welldoc.com/platform/security — FDA 510(k) listed under clearances; the About page
+    states 11 FDA clearances
+- id: ce-mark
+  conforms: true
+  evidence: https://www.welldoc.com/platform/security — CE Mark listed under clearances
+- id: health-canada
+  conforms: true
+  evidence: https://www.welldoc.com/platform/security — Health Canada clearance listed
+- id: iso-27001
+  conforms: false
+  evidence: >-
+    Named only as a framework HITRUST r2 "harmonizes with"; Welldoc does not claim an ISO 27001
+    certificate of its own, so this is recorded as not asserted rather than as conformant.
+- id: nist-csf
+  conforms: false
+  evidence: Named only as a harmonization reference alongside HIPAA and ISO 27001, not as a certification.
+domain_standards:
+  note: >-
+    REWARD-ONLY, and nothing is awarded here. The health regime shortlist (fhir, smart-on-fhir,
+    us-core, uscdi, da-vinci, carin-blue-button, fhir-bulk-data, cds-hooks, c-cda, hl7-v2, dicom)
+    was checked against every Welldoc-controlled page reachable from its sitemap. Welldoc names
+    none of them. Its EHR interoperability is described in prose only ("Deep EMR and workflow
+    integration", "comprehensive integration options"), and its published FHIR-adjacent exchange
+    has historically run through third-party partners (Redox, Validic, Human API, Xealth) whose
+    contracts belong to those companies, not to Welldoc.
+  checked:
+  - id: fhir
+    conforms: false
+    evidence: No FHIR reference on any welldoc.com page; no contract published to inspect.
+  - id: smart-on-fhir
+    conforms: false
+    evidence: Not named by Welldoc; the SMART on FHIR embedding is Xealth's surface, not Welldoc's.
+  - id: hl7-v2
+    conforms: false
+    evidence: Not named on any Welldoc page.
+  - id: uscdi
+    conforms: false
+    evidence: Not named on any Welldoc page.
+cross_cutting:
+- id: oauth2
+  conforms: false
+  evidence: >-
+    No securitySchemes to read and no OAuth documentation; /.well-known/oauth-authorization-server
+    returned 404 on all seven Welldoc hosts probed.
+- id: openid-connect
+  conforms: false
+  evidence: /.well-known/openid-configuration returned 404 on all seven hosts probed.
+- id: rfc9457-problem-details
+  conforms: false
+  evidence: No contract or error reference published.
+- id: rfc9116-security-txt
+  conforms: false
+  evidence: >-
+    /.well-known/security.txt returned 404 on all seven hosts, though a real coordinated-disclosure
+    policy is published as HTML at /platform/security.
